@@ -1,0 +1,20 @@
+{
+  "name": "movie-recommendation-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install-all": "npm --prefix server install && npm --prefix client install",
+    "dev": "npm run install-all --silent && concurrently -k -n server,client -c magenta,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "node server/index.js",
+    "start:prod": "npm --prefix client run build && node server/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
