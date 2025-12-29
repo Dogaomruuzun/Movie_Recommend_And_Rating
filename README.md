@@ -1,3 +1,4 @@
+
 # MovieRec - Advanced Movie Rental & Recommendation Platform
 
 A full-stack web application for renting movies, tracking watch history, and getting personalized recommendations. Built with **React** and **Node.js**, powered by **MySQL**.
@@ -72,3 +73,7 @@ npm run dev
 ## 🔑 Default Access
 -   The **first registered user** automatically becomes an **Admin**.
 -   Subsequent users are standard Users (roles can be updated in the Admin panel).
+<<<<<<< HEAD
+=======
+>>>>>>> adc808a (Proje dosyaları eklendi)
+>>>>>>> 30f6939
